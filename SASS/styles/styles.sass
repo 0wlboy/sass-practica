@@ -12,6 +12,12 @@ $base-color: blue
     justify-content: $vertical
     align-items: $horizontal
 
+@mixin grid($columnas)
+    display: grid
+    grid-template-columns: $columnas
+
+
+/* Main styles    
 
 *
     padding: 0
@@ -28,5 +34,9 @@ $base-color: blue
 
 .columna-top
     @include columna(center,start)
-    
-    
+    height: 20vh
+
+.blogs 
+    @include grid(1fr 1fr 1fr)
+    .blogs
+        @include columna(center,flex-start)

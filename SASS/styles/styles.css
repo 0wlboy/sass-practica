@@ -2,6 +2,7 @@
 /*  Mixings
  *  Son similares a la s variables, sin emebargo, pueden almacenar logica mas compleja
  *  a una variable e incluso tener variaciones */
+/* Main styles     */
 * {
   padding: 0;
   margin: 0;
@@ -25,5 +26,17 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
+  align-items: center;
+  height: 20vh;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.blogs .blogs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }/*# sourceMappingURL=styles.css.map */
