@@ -1,0 +1,28 @@
+.selector {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.selector {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  background: blue;
+}
+
+.selector {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  flex-direction: row;
+  background: blue;
+}
+
+.selector {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background: blue;
+}/*# sourceMappingURL=practica.css.map */

@@ -1,0 +1,28 @@
+@mixin display($display, $justify, $align, $columnas, $direction:row)
+  display: $display
+  @if $display == grid
+    grid-template-columns: $columnas
+  @if $display == flex
+    justify-content: $justify
+    align-items: $align
+    flex-direction: $direction
+    @if $justify == center && $align == center
+      background: blue
+  @else 
+    
+
+
+.selector 
+  @include display(grid,center,flex-end, repeat(4,1fr))
+
+.selector 
+  @include display(flex,end,center, null)
+
+.selector 
+  @include display(flex,start,end, null)
+
+.selector 
+  @include display(flex,flex-end,center, null,column)
+  
+
+  

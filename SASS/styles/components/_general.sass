@@ -1,0 +1,25 @@
+/*
+    mi primera variable
+$base-color: blue
+
+/*
+    Mixings
+    Son similares a la s variables, sin emebargo, pueden almacenar logica mas compleja
+    a una variable e incluso tener variaciones
+@mixin columna($horizontal : center , $vertical : center)
+    display: flex
+    flex-direction: column
+    justify-content: $vertical
+    align-items: $horizontal
+
+@mixin grid($columnas)
+    display: grid
+    grid-template-columns: $columnas
+
+
+/* Main styles    
+
+*
+    padding: 0
+    margin: 0    
+    
